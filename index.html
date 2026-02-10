@@ -214,21 +214,40 @@
 </section>
 <!-- Subscription Form --> 
   <!-- Add form here --> 
-   <section class="py-4 bg-light" aria-labelledby="subscribe-heading">
+  <section class="py-4 bg-light" aria-labelledby="subscribe-heading">
   <div class="container">
-    <h2 id="subscribe-heading" class="text-center mb-3">Subscribe to our Newsletter</h2>
+    <h2 id="subscribe-heading" class="text-center mb-3">
+      Subscribe to our Newsletter
+    </h2>
 
-    <form id="subscribe-form" class="row g-1 justify-content-center" novalidate>
+    <!-- Label ABOVE the row -->
+    <div class="text-center mb-2">
+      <label for="email" class="form-label">Email</label>
+    </div>
+
+    <form id="subscribe-form" class="row g-1 justify-content-center align-items-center" novalidate>
+      
+      <!-- Email input -->
       <div class="col-12 col-md-6">
-        <label for="email" class="form-label">Email</label>
-        <!-- dir="ltr" so email text reads naturally inside an RTL page -->
-        <input id="email" name="email" type="email" class="form-control" placeholder="you@example.com"
-               required aria-describedby="email" dir="ltr" autocomplete="email">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="you@example.com"
+          required
+          dir="ltr"
+          autocomplete="email"
+        >
       </div>
 
-      <div class="col-12 col-md-2 d-grid align-self-end">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
+      <!-- Button -->
+      <div class="col-12 col-md-2 d-grid">
+        <button type="submit" class="btn btn-primary">
+          Subscribe
+        </button>
       </div>
+
     </form>
   </div>
 </section>
