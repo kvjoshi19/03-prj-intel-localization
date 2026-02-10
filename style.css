@@ -104,6 +104,15 @@ body {
   line-height: 1.6;
   text-align: center;
 }
+.feature-icon img,
+.row img[alt^=""], 
+img.mb-3 {
+  max-width: 100%;
+  width: 72px;   
+  height: 72px;
+  object-fit: contain;
+  display: block;
+}
 @media (max-width: 768px) {
   .timeline-track {
     flex-direction: column;
